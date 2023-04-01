@@ -11,7 +11,7 @@ import {
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Layout, Menu, theme, Typography } from 'antd';
-import { GiMountaintop } from 'react-icons/gi';
+import { GiMountaintop, GiBoxingRing } from 'react-icons/gi';
 const { Title } = Typography;
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -26,9 +26,9 @@ const items: MenuProps['items'] = [
   ShopOutlined,
 ].map((icon, index) => ({
   key: String(index + 1),
-  icon: React.createElement(icon),
-  style: { height: '30px' },
-  label: `nav ${index + 1}`,
+  icon: <GiBoxingRing style={{color: "white"}}/>,
+  style: { height: '30px', color: "white" },
+  label: `Club ${index + 1}`,
 }));
 
 const App: React.FC = () => {
@@ -43,17 +43,17 @@ const App: React.FC = () => {
           overflow: 'auto',
           height: '100vh',
           position: 'fixed',
-          background: 'orange',
+          background: 'green',
           left: 0,
           top: 0,
           bottom: 0,
         }}
       >
-        <div style={{ margin: "50px 0", color: 'white', display: "flex", justifyContent: "center" }}>
-          <GiMountaintop size={'5em'}/>
+        <div style={{ margin: "30px 0", color: 'white', display: "flex", justifyContent: "center" }}>
+          <GiMountaintop style={{color: "white"}} size={'5em'}/>
         </div>
         <Title style={{ margin: "10px 0", color: 'white', display: "flex", justifyContent: "center" }} level={4}>Fight Club GPT</Title>
-        <Menu style={{ background: 'orange'}} mode="inline" defaultSelectedKeys={['4']} items={items} />
+        <Menu theme="dark" style={{ background: 'green'}} mode="inline" defaultSelectedKeys={['4']} items={items} />
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
         <Header style={{ padding: 0, background: colorBgContainer }} />
