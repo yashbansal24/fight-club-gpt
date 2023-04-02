@@ -62,7 +62,7 @@ const App: React.FC = () => {
             <p>long content</p>
             {
               // indicates very long content
-              Array.from({ length: 100 }, (_, index) => (
+              Array.from({ length: 10 }, (_, index) => (
                 <React.Fragment key={index}>
                   {index % 20 === 0 && index ? 'more' : '...'}
                   <br />
@@ -71,7 +71,7 @@ const App: React.FC = () => {
             }
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>Yash Bansal ©2023</Footer>
       </Layout>
     </Layout>
   );
