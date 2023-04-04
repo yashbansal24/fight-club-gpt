@@ -59,8 +59,8 @@ const App: React.FC = () => {
         <Header style={{ padding: 0, background: colorBgContainer }} />
         <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
           <div style={{ padding: 24, textAlign: 'center', background: colorBgContainer }}>
-            <p>long content</p>
-            {
+            <p>The quick brown fox jumps over lazy little dog</p>
+            {/* {
               // indicates very long content
               Array.from({ length: 10 }, (_, index) => (
                 <React.Fragment key={index}>
@@ -68,7 +68,7 @@ const App: React.FC = () => {
                   <br />
                 </React.Fragment>
               ))
-            }
+            } */}
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Yash Bansal ©2023</Footer>
