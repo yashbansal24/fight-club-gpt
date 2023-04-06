@@ -62,7 +62,7 @@ const App: React.FC = () => {
             <p>The quick brown fox jumps over lazy little dog</p>
             {
               // indicates very long content
-              Array.from({ length: 10 }, (_, index) => (
+              Array.from({ length: 20 }, (_, index) => (
                 <React.Fragment key={index}>
                   {index % 10 === 0 && index ? 'more' : '...'}
                   <br />
