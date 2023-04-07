@@ -59,12 +59,12 @@ const App: React.FC = () => {
         <Header style={{ padding: 0, background: colorBgContainer }} />
         <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
           <div style={{ padding: 24, textAlign: 'center', background: colorBgContainer }}>
-            <p>The quick brown fox jumps over lazy little dog</p>
             {
               // indicates very long content
-              Array.from({ length: 20 }, (_, index) => (
+              Array.from({ length: 10 }, (_, index) => (
                 <React.Fragment key={index}>
                   {index % 10 === 0 && index ? 'more' : '...'}
+                  <p>The quick brown fox jumps over lazy little dog</p>
                   <br />
                 </React.Fragment>
               ))
